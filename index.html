@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>GTA-SA — Pancho Games Studios</title>
+  <link rel="stylesheet" href="./styles/game.css">
+  <script type="importmap">
+    {"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"}}
+  </script>
+</head>
+<body>
+  <canvas id="game"></canvas>
+  <div id="hud">
+    <div class="brand">LOS SANTOS <span>• PGE ENGINE</span></div>
+    <div class="stats"><b id="health">100</b> HP &nbsp; <b id="money">$350</b></div>
+    <div id="mission">MISSION: Drive to the waypoint.</div>
+    <div id="hint">WASD move/drive • E enter vehicle • Shift sprint • Mouse camera</div>
+    <div id="wanted">☆☆☆☆☆</div>
+    <div id="speed">0 KM/H</div>
+  </div>
+  <div id="radar"><div id="playerDot"></div><div id="missionDot"></div></div>
+  <div id="crosshair">+</div>
+  <div id="start">
+    <h1>GTA-SA</h1>
+    <p>LOS SANTOS // OPEN WORLD BUILD</p>
+    <button id="startButton">ENTER LOS SANTOS</button>
+    <small>Original procedural game build by Pancho Games Studios</small>
+  </div>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
